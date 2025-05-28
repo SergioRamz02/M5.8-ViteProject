@@ -8,9 +8,16 @@
   </head>
   <body>
     <h1>Adivina el número</h1>
-    <p>La computadora ha generado un número entre 1 y 100. ¡Adivínalo!</p>
-    <input type="number" id="numero">
-    <button id="adivinar">Adivinar</button>
+    <p>Selecciona el rango del número a adivinar:</p>
+    <label for="minimo">Mínimo:</label>
+    <input type="number" id="minimo" value="1">
+    <label for="maximo">Máximo:</label>
+    <input type="number" id="maximo" value="100">
+    <button id="iniciar">Iniciar juego</button>
+
+    <p id="rangoInfo">La computadora ha generado un número entre 1 y 100. ¡Adivínalo!</p>
+    <input type="number" id="numero" disabled>
+    <button id="adivinar" disabled>Adivinar</button>
     <p id="mensaje"></p>
 
     <script type="module" src="/main.js"></script>
